@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "generate-locations": "node ./src/lib/generateLocations.js"
+    "generate-locations": "node ./src/services/generateLocations.js"
   },
   "eslintConfig": {
     "extends": [
