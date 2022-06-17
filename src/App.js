@@ -14,7 +14,7 @@ const center = { lat: -21.8329376, lng: -47.4492883 }
 
 const options = {
   imagePath:
-    'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m', // so you must have m1.png, m2.png, m3.png, m4.png, m5.png and m6.png in that folder
+    '/marker-clusterer/m',
 }
 
 function createKey(location) {
@@ -52,11 +52,9 @@ function App() {
                     <h3 style={{ fontWeight: 400, margin: '0px 0px 12px', }}><strong>Nome: </strong>{location?.nome}</h3>
                     <h4 style={{ fontWeight: 400, margin: '0px 0px 12px', }}><strong>Endereço: </strong>{location?.endereco}</h4>
                   </div>
-                </InfoWindow>
-                }
+                </InfoWindow>}
               </Marker>
-            ))
-          }
+            ))}
         </MarkerClusterer>
       </GoogleMap>
     </LoadScript>
